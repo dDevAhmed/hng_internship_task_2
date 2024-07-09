@@ -1,0 +1,97 @@
+section.top-products {
+    background: var(--primary-white);
+
+    span.section-header {
+        text-align: center;
+        margin-bottom: 30px;
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    section.section-content-container {
+        div.top-products {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            /* justify-content: center; */
+
+            span.image-background {
+                border: 1px solid var(--primary-milk);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+                span.collection-name {
+                    text-align: left;
+                    position: relative;
+                    padding: 10px 20px;
+                    width: 100%;
+
+                    h3 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin-top: 5px;
+                    }
+                    span.price {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        margin-top: 10px;
+
+                        span.discount {
+                            text-decoration: line-through;
+                            color: var(--text-muted);
+                        }
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+        a.show-more-button {
+            margin-top: 30px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+
+            button {
+                border: none;
+                outline: none;
+                background: transparent;
+                border: 2px solid var(--primary-blue);
+                color: var(--primary-blue);
+                padding: 10px 30px;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--primary-blue);
+                    color: var(--primary-white);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section.section-content-container {
+        div.top-products {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+}

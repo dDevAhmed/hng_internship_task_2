@@ -6,12 +6,12 @@ import office_wear from '../../assets/images/collection-office-wears.png';
 import casual_wears from '../../assets/images/collection-casual-wear.png';
 
 
-const CollectionCard = () => {
+const CollectionSection = () => {
   return (
-    <section className='section-padding collection-card'>
+    <section className='section-padding collection'>
       <span className='section-header'>
         <h3 className='section-title'>Browse Our Collection</h3>
-        <p className='section-subtitle'>Browse Our Collection</p>
+        <p className='section-subtitle'>Discover the perfect outfit to fit your style</p>
       </span>
       <section className='section-content-container'>
         <span className="image-background">
@@ -31,4 +31,4 @@ const CollectionCard = () => {
   )
 }
 
-export default CollectionCard;
+export default CollectionSection;

@@ -1,15 +1,14 @@
-section.collection-card {
+section.collection {
     background: var(--primary-white);
 
     span.section-header {
         text-align: center;
         margin-bottom: 30px;
         h3 {
-            /* color: var(--primary-blue); */
             font-size: 28px;
         }
         p {
-            /* font-size: 20px; */
+            font-size: 14px;
         }
     }
 
@@ -23,21 +22,21 @@ section.collection-card {
         gap: 30px;
 
         span.image-background {
-            border-radius: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: none;
 
             img {
                 width: 100%;
-                border-radius: 15px;
-                background: var(--primary-black);
+                border: none;
             }
             span.collection-name {
                 text-align: center;
                 position: relative;
                 bottom: 20px;
                 background-color: var(--primary-blue);
+                color: var(--primary-white);
                 padding: 10px 20px;
                 /* font-size: 24px; */
                 width: fit-content;
@@ -47,6 +46,11 @@ section.collection-card {
     }
 }
 
-/* @media only screen and (max-width: 992px) {
-@media only screen and (max-width: 768px) {
-*/
+@media only screen and (max-width: 992px) {
+    section.section-content-container{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 767px) {
+    
+}
