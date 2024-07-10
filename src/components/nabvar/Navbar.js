@@ -5,26 +5,7 @@ import logo from '../../assets/images/FF_logo.png';
 import { useState, useEffect } from 'react';
 
 
-const Navbar = () => {
-  // return (
-  //   <nav>
-  //     <a href="" className='nav-menu'><i className="fa-regular fa-bars"></i></a>
-  //     <span class="nav-logo">
-  //       <img src={logo} alt="CSS Logo" />
-  //       <h3>Fashion Factory</h3>
-  //     </span>
-  //     <span class="center-nav-links">
-  //       <a href="/">Home</a>
-  //       <a href="/products">Shop</a>
-  //       <a href="">About</a>
-  //       <a href="#">Contact</a>
-  //     </span>
-  //     <span class="right-nav-links">
-  //       <a href=""><i className='fa-regular fa-search'></i></a>
-  //       <a href=""><i className="fa-regular fa-cart-shopping"></i></a>
-  //     </span>
-  //   </nav>
-  // )
+const Navbar = ({ cartCount }) => {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -40,7 +21,6 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      {/* Your navbar content here */}
       <a href="" className="nav-menu"><i className="fa-regular fa-bars"></i></a>
       <span className="nav-logo">
         <img src={logo} alt="CSS Logo" />
@@ -55,6 +35,7 @@ const Navbar = () => {
       <span className="right-nav-links">
         <a href=""><i className="fa-regular fa-search"></i></a>
         <a href=""><i className="fa-regular fa-cart-shopping"></i></a>
+        {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
       </span>
     </nav>
   );

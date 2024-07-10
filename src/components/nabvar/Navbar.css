@@ -51,6 +51,14 @@ nav {
 
     span.right-nav-links {
         gap: 10px;
+        .cart-count {
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            font-size: 0.75rem;
+          }
     }
 
     &.scrolled {

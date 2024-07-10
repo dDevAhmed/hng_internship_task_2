@@ -26,6 +26,43 @@ section.top-products {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
+
+                span.discount-badge {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    border-radius: 50%;
+                    background: var(--discount-badge);
+                    color: var(--primary-white);
+                    padding: 10px 5px;
+                    font-size: 10px;
+                    height: 35px;
+                    width: 35px;
+                }
+                span.new-badge {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    border-radius: 50%;
+                    background: var(--new-badge);
+                    color: var(--primary-white);
+                    padding: 10px 5px;
+                    font-size: 10px;
+                    height: 35px;
+                    width: 35px;
+                }
+                a.add-to-cart {
+                    position: absolute;
+                    bottom: 115px;
+                    background: rgba(0, 0, 0, 0.5);
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px;
+                    color: var(--primary-white);
+                    text-decoration: none;
+                    display: none;
+                }
 
                 img {
                     width: 100%;
@@ -59,6 +96,9 @@ section.top-products {
 
                 &:hover {
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    a.add-to-cart{
+                        display: block;
+                    }
                 }
             }
         }

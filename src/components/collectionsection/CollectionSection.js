@@ -16,15 +16,15 @@ const CollectionSection = () => {
       <section className='section-content-container'>
         <span className="image-background">
           <img src={evening_gowns} alt="Evening Gown" />
-          <span className='collection-name'>Evening Gown</span>
+          <span className='collection-name'>Evening Gowns</span>
         </span>
         <span className="image-background">
           <img src={office_wear} alt="Evening Gown" />
-          <span className='collection-name'>Evening Gown</span>
+          <span className='collection-name'>Office Wears</span>
         </span>
         <span className="image-background">
           <img src={casual_wears} alt="Evening Gown" />
-          <span className='collection-name'>Evening Gown</span>
+          <span className='collection-name'>Casual Wears</span>
         </span>
       </section>
     </section>

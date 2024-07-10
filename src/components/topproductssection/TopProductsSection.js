@@ -11,7 +11,7 @@ import image_7 from '../../assets/images/products/7.png';
 import image_8 from '../../assets/images/products/8.png';
 
 
-const TopProductsSection = () => {
+const TopProductsSection = ({ addToCart }) => {
   return (
     <section className='section-padding top-products'>
       <span className='section-header'>
@@ -21,6 +21,8 @@ const TopProductsSection = () => {
       <section className='section-content-container'>
         <div className='top-products'>
           <span className="image-background">
+            <span className='discount-badge'>-50%</span>
+            <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_1} alt="Evening Gown" />
             <span className='collection-name'>
               <h3>Yellow Summer Dress</h3>
@@ -32,9 +34,10 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+            <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_2} alt="Evening Gown" />
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Jean Trouser</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
@@ -43,9 +46,11 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+            <span className='new-badge'>new</span>
+            <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_3} alt="Evening Gown" />
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Brown Gown</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
@@ -54,9 +59,10 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+          <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_4} alt="Evening Gown" />
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Black skirt</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
@@ -65,9 +71,11 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+          <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_5} alt="Evening Gown" />
+            <span className='new-badge'>new</span>
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Black Pants</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
@@ -76,9 +84,10 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+          <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_6} alt="Evening Gown" />
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Black Blazer Jacket</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
@@ -87,9 +96,10 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+          <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_7} alt="Evening Gown" />
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Prom Gown</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
@@ -98,9 +108,11 @@ const TopProductsSection = () => {
             </span>
           </span>
           <span className="image-background">
+            <span className='discount-badge'>-50%</span>
+            <a href='' className='add-to-cart' onClick={addToCart}>Add to cart</a>
             <img src={image_8} alt="Evening Gown" />
             <span className='collection-name'>
-              <h3>Yellow Summer Dress</h3>
+              <h3>Black silk skirt</h3>
               <p>Casual Wear</p>
               <span className='price'>
                 <span>&#x20A6; 15,000</span>
